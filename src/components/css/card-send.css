@@ -1,0 +1,26 @@
+/* Estilos para el componente de enviado */
+
+.form-container-send {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container-send img, 
+.form-container-send h2, 
+.form-container-send p {
+    padding: 15px;
+}
+
+
+@media  (max-width: 768px) {
+    .form-container-send {
+        width: 100%;
+        /* padding-right: 30px; */
+    }
+}
+
+@media  (max-width: 576px) {
+    
+}

@@ -1,0 +1,123 @@
+/* Css para el formulario */
+
+.form-container {
+    width: 450px;
+    --fontsize-infocarditem: 16px;
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 2px 12px;    
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:hover {
+    appearance: none;
+}
+
+.infoCardItem {
+    font-size: var(--fontsize-infocarditem);
+}
+
+.form-div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-expdate {
+    /* width: 100%; */
+    display: flex;
+    gap: 2px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-expdate div:first-child {
+    width: 48%;
+    /* border: 5px red solid; */
+}
+
+.card-expdate div:first-child article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-expdate div:first-child input {
+    width: 50%;
+    margin-right: 5px;
+}
+
+.card-expdate div:last-child {
+    width: 52%;
+    /* border: 5px yellowgreen solid; */
+}
+
+.card-expdate div:last-child input {
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    padding: 0 0;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.error-form {
+    color: red;
+    font-size: 10px;
+}
+
+/* Medias queries */
+@media  (max-width: 1200px) {
+    
+}
+
+@media  (max-width: 992px) {
+    .form-container {
+         padding-top: 50px;
+    }
+    
+}
+
+@media  (max-width: 768px) {
+    .form-container {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .form-container {
+        --fontsize-infocarditem: 14px;
+    }
+}
+
+@media  (max-width: 576px) {
+    
+}

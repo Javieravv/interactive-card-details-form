@@ -1,0 +1,58 @@
+
+.cardreverse-container {
+    --right-digitverification: 0%;
+    --top-digitverification: 45%;
+    background-image: url('/images/bg-card-back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    height: var(--height-card);
+    position: relative;
+    width: var(--width-card);
+}
+
+.cardreverse-container img {
+    width: 100%;
+    
+}
+
+.cardreverse-digitverification {
+    display: flex;
+    flex-direction: row-reverse;
+    letter-spacing: 5px;
+    margin-right: 60px;
+    position: absolute;
+    top: var(--top-digitverification);
+    right: var(--right-digitverification);
+}
+
+/* Media queries para diseño responsive */
+
+@media  (max-width: 1200px) {
+    
+}
+
+@media  (max-width: 992px) {
+    
+}
+
+@media  (max-width: 768px) {
+    .cardreverse-container {
+        --right-digitverification: -5%;
+        --top-digitverification: 44%;
+        --width-card: 358px;
+        --height-card: 196px;
+    }
+}
+
+@media  (max-width: 576px) {
+    .cardreverse-container {
+        --right-digitverification: -10%;
+        --top-digitverification: 43%;
+        --width-card: 224px;
+        --height-card: 123px;
+    }
+}

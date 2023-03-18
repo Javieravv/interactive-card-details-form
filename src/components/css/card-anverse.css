@@ -1,0 +1,100 @@
+/* Css para el anverso de la tarjeta */
+
+.cardanverse-container {
+    --fontsize-cardname: 20px;
+    --fontsize-cardnumber: 25px;
+    --top-circles: 15%;
+    --top-name: 70%;
+    --top-number: 48%;
+    --size-circles: 50px;
+    --padding-elements: 8%;
+    background-image: url('/images/bg-card-front.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    height: var(--height-card);
+    position: relative;
+    width: var(--width-card);
+}
+
+.cardanverse-circles {
+    top: var(--top-circles);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 var(--padding-elements);
+}
+
+.cardanverse-circles div:first-child {
+    border: none;
+    border-radius: 50%;
+    width: var(--size-circles);
+    height: var(--size-circles);
+    background-color: var(--White);
+}
+
+.cardanverse-circles div:last-child {
+    border: 1px var(--White) solid;
+    border-radius: 50%;
+    width: calc(var(--size-circles)/2);
+    height: calc(var(--size-circles)/2);
+    background-color: transparent;
+    margin-left: 15px;
+}
+
+.cardanverse-number {
+    position: absolute;
+    font-size: var(--fontsize-cardnumber);
+    font-weight: 500;
+    top: var(--top-number);
+    width: 100%;
+    padding: 0 var(--padding-elements);
+}
+
+.cardanverse-name {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: var(--top-name);
+    text-transform: uppercase;
+    width: 100%;
+    font-size: var(--fontsize-cardname);
+    padding: 0 var(--padding-elements);
+    /* margin-right: -10%; */
+}
+
+/* Media queries para diseño responsive */
+
+@media  (max-width: 1200px) {
+    
+}
+
+@media  (max-width: 992px) {
+    
+}
+
+@media  (max-width: 768px) {
+    .cardanverse-container {
+        --fontsize-cardname: 15px;
+        --fontsize-cardnumber: 20px;
+        --top-circles: 12%;
+        --height-card: 196px;
+        --width-card: 358px;
+        --size-circles: 40px;
+    }
+}
+
+@media  (max-width: 576px) {
+    .cardanverse-container {
+        --fontsize-cardname: 10px;
+        --fontsize-cardnumber: 15px;
+        --height-card: 123px;
+        --width-card: 224px;
+        --size-circles: 38px;
+    }
+}
